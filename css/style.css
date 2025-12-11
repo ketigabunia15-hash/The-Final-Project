@@ -120,15 +120,20 @@ header {
 
 
 .social {
-    margin-top: 20px;
+    display: flex;          
+    justify-content: center; 
+    gap: 15px;    
+    margin-top: 15px;          
 }
 
-.social i {
-    color: white;
-    font-size: 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: .2s;
+.social a i {
+    font-size: 24px;
+    color: #e6e6e6;
+    transition: color 0.3s;
+}
+
+.social a:hover i {
+    color: #0073b1; 
 }
 
 .social i:hover {
