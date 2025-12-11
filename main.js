@@ -28,3 +28,20 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(changeImage, 5000);
 });
 
+const progressBars = document.querySelectorAll('.skill-progress');
+function animateProgress() {
+    progressBars.forEach(bar => {
+        const barTop = bar.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        const progressValue = bar.getAttribute('data-progress');
+
+        if (barTop < windowHeight - 50) { // -50 პატარა offset
+            bar.style.width = progressValue;
+        }
+    });
+}
+
+window.addEventListener('scroll', animateProgress);
+window.addEventListener('load', animateProgress);
+
+

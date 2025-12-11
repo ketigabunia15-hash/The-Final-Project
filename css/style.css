@@ -199,7 +199,8 @@ header {
 
 .skill-progress {
     height: 100%;
+    width: 0; 
     background-color: #ff7f00; 
     border-radius: 5px;
+    transition: width 1.5s ease-in-out; 
 }
-
