@@ -526,3 +526,67 @@ header {
 .contact-form button:hover {
   background: #e86f00;
 }
+
+.footer {
+  background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
+  padding: 80px 40px 40px;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ნავიგაცია */
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #ff7a00;
+}
+
+/* სოციალური აიქონები */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.footer-socials a {
+  width: 38px;
+  height: 38px;
+  background: #222;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  background: #ff7a00;
+}
+
+/* ქვედა ტექსტი */
+.footer-copy {
+  font-size: 13px;
+  color: #777;
+}
