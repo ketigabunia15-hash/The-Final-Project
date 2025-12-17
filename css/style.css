@@ -590,3 +590,179 @@ header {
   font-size: 13px;
   color: #777;
 }
+
+/* Tablets & small laptops */
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 30px;
+    }
+
+    .hero-left, .hero-right {
+        max-width: 100%;
+    }
+
+    .hero-left .title {
+        font-size: 48px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-left img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-left img {
+        margin-bottom: 15px;
+    }
+
+    .contact-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Phones */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-center {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-left .title {
+        font-size: 36px;
+    }
+
+    .hero-left .desc {
+        font-size: 14px;
+    }
+
+    .hero-photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-left img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .services-grid, .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+
+    .testimonial-left img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 13px;
+        padding: 12px 14px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .footer-socials {
+        gap: 12px;
+    }
+}
+
+/* Extra small devices (phones <480px) */
+@media screen and (max-width: 480px) {
+    .hero-left .title {
+        font-size: 28px;
+    }
+
+    .hero-left .name {
+        font-size: 18px;
+    }
+
+    .hero-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-left img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .services h2, .projects h2, .testimonials h2, .contact h2 {
+        font-size: 32px;
+    }
+
+    .skill span {
+        font-size: 12px;
+    }
+
+    .skill-bar {
+        height: 8px;
+    }
+
+    .service-card, .project-card {
+        padding: 20px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .testimonial-left img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-subtitle, .projects-subtitle, .services-subtitle, .testimonials-subtitle {
+        font-size: 14px;
+    }
+
+    .cv-btn, .hire-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
