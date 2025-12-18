@@ -61,25 +61,25 @@ filterButtons.forEach(button => {
 const testimonials = [
   {
     img: "css/img/pic1.jpg",
-    quote: "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan.",
+    quote: "Thank you for the wonderful website design. The work was carried out very professionally, and I am extremely satisfied with the result.",
     name: "Mariam Gabunia",
     position: "Lawyer"
   },
   {
     img: "css/img/pic2.jpg",
-    quote: "Aliquet donec morbi convallis pretium. Id leo urna velit neque mattis.",
+    quote: "Thank you for the completed web design. The result is truly outstanding, and I appreciate your professionalism.",
     name: "Gvantsa Shonia",
     position: "Lawyer"
   },
   {
     img: "css/img/pic3.jpg",
-    quote: "Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
+    quote: "I would like to express my gratitude for the excellent website design. The result exceeds expectations, and your professionalism is truly invaluable.",
     name: "Giorgi Dartsmelidze",
     position: "Financial Auditor"
   },
   {
     img: "css/img/pic4.jpg",
-    quote: "Phasellus consequat urna tellus. Tristique amet sed massa nibh lectus in.",
+    quote: "Thank you for the high-quality website design. The standard of the work represents a clear example of professionalism, and I greatly appreciate your efforts.",
     name: "Tornike Reinovi",
     position: "Assembly Technician"
   }
