@@ -62,6 +62,20 @@ header {
   color: #ff7a00;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 26px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
 .cv-btn {
   background: #ff7a00;
   padding: 10px 18px;
@@ -165,10 +179,10 @@ header {
     gap: 50px;
 
     max-width: 1100px;
-    margin: 80px auto;        /* 👈 წინა სექციის მერე ჩაჯდება */
+    margin: 80px auto;        
 
     padding: 60px 50px;
-    background: #1a1a1a;      /* 👈 გამოყოფილი ფონი */
+    background: #1a1a1a;     
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 
@@ -654,12 +668,33 @@ header {
     .navbar {
         flex-direction: column;
         gap: 15px;
+        position: relative;
     }
 
     .nav-center {
-        flex-direction: column;
-        gap: 15px;
-    }
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    background: #111;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    z-index: 1000;
+  }
+
+  .nav-center.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
 
     .hero-left .title {
         font-size: 36px;

@@ -1,3 +1,10 @@
+const burger = document.getElementById("burger");
+  const navMenu = document.getElementById("navMenu");
+
+  burger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+  
 const images = [
   "css/img/me.jpg",
   "css/img/photo1.jpg",
