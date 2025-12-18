@@ -44,4 +44,14 @@ function animateProgress() {
 window.addEventListener('scroll', animateProgress);
 window.addEventListener('load', animateProgress);
 
+const skills = document.querySelectorAll('.skill-progress');
 
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.width = entry.target.dataset.level;
+    }
+  });
+}, { threshold: 0.5 });
+
+skills.forEach(skill => observer.observe(skill));

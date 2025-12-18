@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #1a1a1a; 
     color: #fff; 
@@ -11,6 +16,8 @@ body {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
     background-color: #1a1a1a; 
