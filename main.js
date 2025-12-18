@@ -80,7 +80,7 @@ const testimonials = [
   {
     img: "css/img/pic4.jpg",
     quote: "Thank you for the high-quality website design. The standard of the work represents a clear example of professionalism, and I greatly appreciate your efforts.",
-    name: "Tornike Reinovi",
+    name: "Tornike Revinovi",
     position: "Assembly Technician"
   }
 ];
