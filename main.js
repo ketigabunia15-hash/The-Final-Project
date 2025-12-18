@@ -17,3 +17,22 @@ setInterval(() => {
   }, 500);
 
 }, 5000);
+
+const skillSection = document.querySelector('.about-me');
+const skillBars = document.querySelectorAll('.skill-progress');
+
+const skillObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        skillBars.forEach(bar => {
+          bar.style.width = bar.dataset.level;
+        });
+        skillObserver.disconnect(); // ერთხელ შესრულდეს
+      }
+    });
+  },
+  { threshold: 0.4 }
+);
+
+skillObserver.observe(skillSection);

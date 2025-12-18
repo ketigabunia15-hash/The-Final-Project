@@ -215,7 +215,7 @@ header {
 }
 
 .skill-progress {
-    height: 100%;
+    height: 10px;
     width: 0; /* scroll-ზე ან JS-ით შეივსება */
     background-color: #ff7f00;
     border-radius: 5px;
