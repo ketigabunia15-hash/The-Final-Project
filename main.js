@@ -57,3 +57,57 @@ filterButtons.forEach(button => {
     });
   });
 });
+
+const testimonials = [
+  {
+    img: "css/img/pic1.jpg",
+    quote: "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan.",
+    name: "Mariam Gabunia",
+    position: "Lawyer"
+  },
+  {
+    img: "css/img/pic2.jpg",
+    quote: "Aliquet donec morbi convallis pretium. Id leo urna velit neque mattis.",
+    name: "Gvantsa Shonia",
+    position: "Lawyer"
+  },
+  {
+    img: "css/img/pic3.jpg",
+    quote: "Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.",
+    name: "Giorgi Dartsmelidze",
+    position: "Financial Auditor"
+  },
+  {
+    img: "css/img/pic4.jpg",
+    quote: "Phasellus consequat urna tellus. Tristique amet sed massa nibh lectus in.",
+    name: "Tornike Reinovi",
+    position: "Assembly Technician"
+  }
+];
+const imgEl = document.querySelector('.testimonial-left img');
+const quoteEl = document.querySelector('.testimonial-right .quote');
+const nameEl = document.querySelector('.testimonial-right h4');
+const positionEl = document.querySelector('.testimonial-right span');
+const dots = document.querySelectorAll('.testimonial-dots span');
+
+let currentSlide = 0;
+function showSlide(index) {
+  const t = testimonials[index];
+  imgEl.src = t.img;
+  quoteEl.textContent = t.quote;
+  nameEl.textContent = t.name;
+  positionEl.textContent = t.position;
+   dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+}
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    currentSlide = i;
+    showSlide(i);
+  });
+});
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % testimonials.length;
+  showSlide(currentSlide);
+}, 5000);
+showSlide(currentSlide);
