@@ -36,3 +36,24 @@ const skillObserver = new IntersectionObserver(
 );
 
 skillObserver.observe(skillSection);
+
+const filterButtons = document.querySelectorAll('.project-filters button');
+const projectCards = document.querySelectorAll('.project-card');
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    filterButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    const filter = button.textContent.toLowerCase(); // button-ის ტექსტი, მაგალითად "web design"
+
+    projectCards.forEach(card => {
+      const category = card.querySelector('span').textContent.toLowerCase();
+
+      if (filter === 'all' || category === filter) {
+        card.style.display = 'block'; // გამოაჩინე
+      } else {
+        card.style.display = 'none';  // დამალე
+      }
+    });
+  });
+});
