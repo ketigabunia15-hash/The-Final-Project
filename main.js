@@ -44,15 +44,15 @@ filterButtons.forEach(button => {
     filterButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 
-    const filter = button.textContent.toLowerCase(); // button-ის ტექსტი, მაგალითად "web design"
+    const filter = button.textContent.toLowerCase(); 
 
     projectCards.forEach(card => {
       const category = card.querySelector('span').textContent.toLowerCase();
 
       if (filter === 'all' || category === filter) {
-        card.style.display = 'block'; // გამოაჩინე
+        card.style.display = 'block'; 
       } else {
-        card.style.display = 'none';  // დამალე
+        card.style.display = 'none';  
       }
     });
   });

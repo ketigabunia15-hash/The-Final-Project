@@ -216,7 +216,7 @@ header {
 
 .skill-progress {
     height: 10px;
-    width: 0; /* scroll-ზე ან JS-ით შეივსება */
+    width: 0; 
     background-color: #ff7f00;
     border-radius: 5px;
     transition: width 1.5s ease-in-out;
@@ -225,7 +225,7 @@ header {
 .services {
   background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
   padding: 120px 40px 100px;
-  margin-top: -120px; /* აქ ხდება გადაბმა წინა სექციაზე */
+  margin-top: -120px; 
 }
 
 .services-container {
@@ -286,7 +286,7 @@ header {
 .projects {
   background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
   padding: 140px 40px 120px;
-  margin-top: -120px; /* გადაბმა Services სექციაზე */
+  margin-top: -120px; 
 }
 
 .projects-container {
@@ -373,7 +373,7 @@ header {
 .testimonials {
   background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
   padding: 140px 40px 120px;
-  margin-top: -120px; /* გადაბმა Projects სექციაზე */
+  margin-top: -120px; 
 }
 
 .testimonials-container {
@@ -486,7 +486,6 @@ header {
   line-height: 1.6;
 }
 
-/* ფორმა */
 .contact-form {
   background: transparent;
 }
@@ -518,7 +517,6 @@ header {
   color: #999;
 }
 
-/* ღილაკი */
 .contact-form button {
   padding: 14px 40px;
   border: none;
@@ -545,7 +543,6 @@ header {
   text-align: center;
 }
 
-/* ნავიგაცია */
 .footer-nav {
   list-style: none;
   display: flex;
@@ -567,7 +564,6 @@ header {
   color: #ff7a00;
 }
 
-/* სოციალური აიქონები */
 .footer-socials {
   display: flex;
   justify-content: center;
@@ -592,7 +588,6 @@ header {
   background: #ff7a00;
 }
 
-/* ქვედა ტექსტი */
 .footer-copy {
   font-size: 13px;
   color: #777;
