@@ -212,26 +212,47 @@
   </div>
 </section>
 
+
 <section id="contact" class="contact">
   <div class="contact-container">
     <h2>Contact Us</h2>
     <p class="contact-subtitle">
-      Let’s create something amazing together! Have an idea, question, or just want to say hi? I’d love to hear from you.
+      Let’s create something amazing together!  
+      Have an idea, question, or just want to say hi?
     </p>
 
     <form class="contact-form">
       <div class="contact-row">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Enter Your Email">
-        <input type="text" placeholder="Enter Your Website">
+        <input
+          type="text"
+          placeholder="Your Name"
+          required
+          pattern="[A-Za-zა-ჰ\s]+"
+          title="მხოლოდ ასოების შეყვანა შეიძლება"
+          oninput="this.value = this.value.replace(/[^A-Za-zა-ჰ\s]/g, '')"
+        >
+        <input
+  type="email"
+  placeholder="Enter Your Email"
+  required
+  pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+  title="შეიყვანეთ სწორი email (მხოლოდ ინგლისური ასოები)"
+  oninput="this.value = this.value.replace(/[^A-Za-z0-9@._%+-]/g, '')"
+>
+        <input
+          type="url"
+          placeholder="Enter Your Website"
+        >
       </div>
-
-      <textarea placeholder="Enter Your Message"></textarea>
+      <textarea
+        placeholder="Enter Your Message"
+        required></textarea>
 
       <button type="submit">Contact Me</button>
     </form>
   </div>
 </section>
+
 
 <footer class="footer">
   <div class="footer-container">

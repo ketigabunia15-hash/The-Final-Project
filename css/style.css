@@ -518,6 +518,7 @@ header {
   border-radius: 10px;
   border: none;
   font-size: 14px;
+  outline: none;
 }
 
 .contact-form textarea {
@@ -529,6 +530,11 @@ header {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #999;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  outline: 2px solid #ff4d4d;
 }
 
 .contact-form button {
