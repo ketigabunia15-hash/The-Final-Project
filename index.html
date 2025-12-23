@@ -240,9 +240,11 @@
   oninput="this.value = this.value.replace(/[^A-Za-z0-9@._%+-]/g, '')"
 >
         <input
-          type="url"
-          placeholder="Enter Your Website"
-        >
+  type="url"
+  placeholder="Enter Your Website"
+  pattern="https?://[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
+  title="შეიყვანეთ სწორი URL (https://example.com)"
+>
       </div>
       <textarea
         placeholder="Enter Your Message"
